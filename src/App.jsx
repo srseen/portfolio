@@ -1,5 +1,12 @@
-export default function App() {
+import AppRoutes from "./routes";
+import { ThemeProvider } from "./contexts/ThemeContext";
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-red-600">Hello world!</h1>
+    <ThemeProvider>
+      <AppRoutes />
+    </ThemeProvider>
   );
-}
+};
+
+export default App;
