@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import Logo from "../assets/logo.svg";
-import sun from "../assets/sun.svg";
-import moon from "../assets/moon.svg";
+import sun from "../assets/Theme/sun.svg";
+import moon from "../assets/Theme/moon.svg";
 import ThemeContext from "../Contexts/ThemeContext";
 
 const Navbar = () => {
@@ -20,12 +20,14 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center">
-        <img
-          src={Logo}
-          alt="Logo"
-          className="bg-white rounded-full h-8 w-8 mr-2"
-        />
-        <span className="font-semibold text-xl">My Portfolio</span>
+        <Link to="/" className="flex items-center">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="bg-white rounded-full h-8 w-8 mr-2"
+          />
+          <span className="font-semibold text-xl">My Portfolio</span>
+        </Link>
       </div>
       <div className="flex items-center space-x-4">
         <div className="md:hidden">
@@ -55,16 +57,16 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/about"
-            className="block md:inline-block hover:text-gray-400"
-          >
-            About
-          </Link>
-          <Link
             to="/projects"
             className="block md:inline-block hover:text-gray-400"
           >
             Projects
+          </Link>
+          <Link
+            to="/about"
+            className="block md:inline-block hover:text-gray-400"
+          >
+            About
           </Link>
           <Link
             to="/contact"
