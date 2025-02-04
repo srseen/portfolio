@@ -5,9 +5,11 @@ import PropTypes from "prop-types";
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
+      <div className="flex flex-col h-screen">
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
     </>
   );
 };
