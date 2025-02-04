@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <footer
       className={`${
-        theme === "light" ? "bg-sky-200 text-black" : "bg-sky-950 text-white"
+        theme === "light"
+          ? "bg-primary-light text-black"
+          : "bg-primary-dark text-white"
       } py-4`}
     >
       <div className="container mx-auto text-center">

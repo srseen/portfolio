@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("daek");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));

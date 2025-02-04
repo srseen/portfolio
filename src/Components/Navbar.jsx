@@ -16,7 +16,9 @@ const Navbar = () => {
   return (
     <nav
       className={`flex items-center justify-between p-4 ${
-        theme === "light" ? "bg-sky-200 text-black" : "bg-sky-950 text-white"
+        theme === "light"
+          ? "bg-primary-light text-black"
+          : "bg-primary-dark text-white"
       }`}
     >
       <div className="flex items-center">

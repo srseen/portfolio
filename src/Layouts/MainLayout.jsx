@@ -13,9 +13,7 @@ const MainLayout = ({ children }) => {
         <Navbar />
         <main
           className={`${
-            theme === "light"
-              ? "bg-gradient-to-r from-sky-100 to-gray-100"
-              : "bg-gradient-to-r from-sky-500 to-gray-800"
+            theme === "light" ? "bg-secondary-light" : "bg-secondary-dark"
           } flex-grow flex items-center justify-center`}
         >
           {children}
