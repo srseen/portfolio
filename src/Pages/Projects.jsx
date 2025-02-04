@@ -1,4 +1,4 @@
-const Home = () => {
+const Project = () => {
   return (
     <div className="max-w-full max-h-full">
       <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
@@ -40,4 +40,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Project;

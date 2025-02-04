@@ -14,8 +14,8 @@ const MainLayout = ({ children }) => {
         <main
           className={`${
             theme === "light"
-              ? "bg-gradient-to-r from-blue-100 to-purple-100"
-              : "bg-gradient-to-r from-blue-500 to-purple-500"
+              ? "bg-gradient-to-r from-sky-100 to-gray-100"
+              : "bg-gradient-to-r from-sky-500 to-gray-800"
           } flex-grow flex items-center justify-center`}
         >
           {children}
